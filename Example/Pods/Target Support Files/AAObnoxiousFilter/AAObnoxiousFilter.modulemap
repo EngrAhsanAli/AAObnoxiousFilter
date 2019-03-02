@@ -1,0 +1,6 @@
+framework module AAObnoxiousFilter {
+  umbrella header "AAObnoxiousFilter-umbrella.h"
+
+  export *
+  module * { export * }
+}

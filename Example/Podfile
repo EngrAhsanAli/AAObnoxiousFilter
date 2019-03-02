@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AAObnoxiousFilter_Example' do
+  pod 'AAObnoxiousFilter', :path => '../'
+
+  target 'AAObnoxiousFilter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

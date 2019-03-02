@@ -1,0 +1,6 @@
+framework module Pods_AAObnoxiousFilter_Tests {
+  umbrella header "Pods-AAObnoxiousFilter_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

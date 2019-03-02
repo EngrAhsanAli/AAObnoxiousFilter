@@ -1,0 +1,16 @@
+PODS:
+  - AAObnoxiousFilter (0.1.0)
+
+DEPENDENCIES:
+  - AAObnoxiousFilter (from `../`)
+
+EXTERNAL SOURCES:
+  AAObnoxiousFilter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AAObnoxiousFilter: c2db10234cc4b212b421a07b7f7396db69b1a620
+
+PODFILE CHECKSUM: 9cae60bc3135564d51261a791942f5dcb72ca3c8
+
+COCOAPODS: 1.6.0
