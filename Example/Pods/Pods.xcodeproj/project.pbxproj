@@ -13,9 +13,10 @@
 		2F0C1DDF4DCB466F369039FA31CF3B50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		3104622673AAE63C4193866B0BBD924B /* AAObnoxiousFilter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D4844502941A7404B75A4947EA8EE2 /* AAObnoxiousFilter-dummy.m */; };
 		666DE66FCE29F0A794E094A08E413C59 /* Pods-AAObnoxiousFilter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29057B4084B06CB292CB5799F8A88E1D /* Pods-AAObnoxiousFilter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F61D57E222B22A0003DEC38 /* nsfw.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8F61D57A222B2250003DEC38 /* nsfw.mlmodel */; };
 		8F61D580222B2313003DEC38 /* AAObnoxiousFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61D57F222B2313003DEC38 /* AAObnoxiousFilter.swift */; };
 		8F61D582222B2358003DEC38 /* AAObnoxiousFilter+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61D581222B2358003DEC38 /* AAObnoxiousFilter+Helper.swift */; };
+		8F61D583222B3437003DEC38 /* nsfw.bin in Resources */ = {isa = PBXBuildFile; fileRef = 8F61D57A222B2250003DEC38 /* nsfw.bin */; };
+		8F61D585222B3708003DEC38 /* CoreML+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61D584222B3708003DEC38 /* CoreML+Helper.swift */; };
 		B310CC6A334DDD6B4A8325326D26D50F /* AAObnoxiousFilter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CCDDDD0A3EF4E770D2D78804B740F08 /* AAObnoxiousFilter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1A77348F2F40A2FE98B1D0F58E51D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		CDA21D34352A7CB773197EF7B4277D34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -52,9 +53,10 @@
 		62A424D16D84C56816BDD154EE5AF4A9 /* AAObnoxiousFilter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AAObnoxiousFilter.modulemap; sourceTree = "<group>"; };
 		7CCDDDD0A3EF4E770D2D78804B740F08 /* AAObnoxiousFilter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAObnoxiousFilter-umbrella.h"; sourceTree = "<group>"; };
 		7E0CD5C9D9DC11E7D90259428AF13E5B /* AAObnoxiousFilter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AAObnoxiousFilter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8F61D57A222B2250003DEC38 /* nsfw.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = nsfw.mlmodel; sourceTree = "<group>"; };
+		8F61D57A222B2250003DEC38 /* nsfw.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = nsfw.bin; sourceTree = "<group>"; };
 		8F61D57F222B2313003DEC38 /* AAObnoxiousFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAObnoxiousFilter.swift; sourceTree = "<group>"; };
 		8F61D581222B2358003DEC38 /* AAObnoxiousFilter+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AAObnoxiousFilter+Helper.swift"; sourceTree = "<group>"; };
+		8F61D584222B3708003DEC38 /* CoreML+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreML+Helper.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EE358FA5D782E9219A586B3B481EA66 /* Pods-AAObnoxiousFilter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAObnoxiousFilter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A703756F9221B5106EEA3823C2844FED /* Pods-AAObnoxiousFilter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAObnoxiousFilter_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				8F61D57F222B2313003DEC38 /* AAObnoxiousFilter.swift */,
 				8F61D581222B2358003DEC38 /* AAObnoxiousFilter+Helper.swift */,
+				8F61D584222B3708003DEC38 /* CoreML+Helper.swift */,
 			);
 			name = Classes;
 			path = AAObnoxiousFilter/Classes;
@@ -168,7 +171,7 @@
 		8F61D578222B2250003DEC38 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				8F61D57A222B2250003DEC38 /* nsfw.mlmodel */,
+				8F61D57A222B2250003DEC38 /* nsfw.bin */,
 			);
 			name = Assets;
 			path = AAObnoxiousFilter/Assets;
@@ -376,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F61D583222B3437003DEC38 /* nsfw.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,9 +405,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F61D57E222B22A0003DEC38 /* nsfw.mlmodel in Sources */,
 				3104622673AAE63C4193866B0BBD924B /* AAObnoxiousFilter-dummy.m in Sources */,
 				8F61D582222B2358003DEC38 /* AAObnoxiousFilter+Helper.swift in Sources */,
+				8F61D585222B3708003DEC38 /* CoreML+Helper.swift in Sources */,
 				8F61D580222B2313003DEC38 /* AAObnoxiousFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
